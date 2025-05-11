@@ -243,7 +243,6 @@ update_repos() {
   [[ $1 == true ]] && args="-qq"
   case "$OS" in
   ubuntu | debian)
-    apt-get -y $args update
     ;;
   *)
     # Do nothing as AlmaLinux and RockyLinux update metadata before installing packages.
